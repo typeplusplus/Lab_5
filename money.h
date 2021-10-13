@@ -18,8 +18,8 @@ class Money
         int getCents() const;
         double getTotal() const;
 
-        friend ostream& operator<<(ostream& out, Money a);
-        const Money operator+ (Money & value2);
+        friend ostream& operator <<(ostream& out, Money a);
+        friend const Money operator +(const Money & value1, const Money & value2);
 
 
     private:
