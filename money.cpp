@@ -27,14 +27,14 @@ int Money::getCents() const
     return cents;
 }
 
-//Overload
+//Overload operators
 ostream& operator<<(ostream& out, Money a)
 {
     out << a.getDollars() << "." << setw(2) << setfill('0') << a.getCents();
     return out;
 }
 
-const Money operator+ (Money & value2)
+const Money operator +(const Money & value1, const Money & value2)
 {
     int allCents1 = value2.getDollars() * 100 + value2.getCents();
     int allCents2 = value2.getDollars() * 100 + value2.getCents();
