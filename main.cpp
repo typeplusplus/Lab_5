@@ -17,13 +17,12 @@ int main()
 	
     Money n;
 
-    //Money n = m % 50;
-    //cout << "50% of m is " << n << endl;
+    Money n = m % 50;
+    cout << "50% of m is " << n << endl;
     
     n = 10 * m;
     cout << "10 times value is " << n << endl;
 
-    //Money a, b;
     Money a(8, 75); //a = $8.75
     Money b(5, 80); //b = $5.80
 
