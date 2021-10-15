@@ -34,6 +34,17 @@ ostream& operator<<(ostream& out, Money a)
     return out;
 }
 
+//Percentage
+const Money operator %(int amount, const Money & value1)
+{
+	float percetnage = amount * (.01);
+	
+	int resultingDollars = value1.getDollars() * percentage;
+	int resultingCnets = value1.getCents() * percentage;
+	
+	return Money(resultingDollars, resultingCents)
+}
+
 //Addition
 const Money operator +(const Money & value1, const Money & value2)
 {

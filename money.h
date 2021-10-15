@@ -20,6 +20,8 @@ class Money
         double getTotal() const;
 
         friend ostream& operator <<(ostream& out, Money a);
+    
+        friend const Money operator %(int amount, const Money & value1);
         
         friend const Money operator +(const Money & value1, const Money & value2);
         
