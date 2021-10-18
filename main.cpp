@@ -1,11 +1,15 @@
-//Reference: http://www1.udel.edu/CIS/181/eschrag/07J/lectures/2007.06.28.pdf
-
 #include <iostream>
 
 #include "printmefirst.h"
 #include "money.h"
 
 using namespace std;
+
+/*
+Purpose: This program was created to test the operators overloaded for the Money class that is created. First the program will call the printmefirst function to output the students information and class assignment. The main function will be called and a new object will be declared using the Money class. Arithmatic and Output operations are tested for functionality and printed to the terminal.
+@param - None
+@return - None
+*/
 
 int main()
 
